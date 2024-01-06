@@ -41,6 +41,10 @@ h1{
     color:white;
 }
 
+.self-center{
+    align-self: center;
+}
+
 /* h1{
     text-transform: uppercase;
     font-weight: 900;
@@ -352,25 +356,241 @@ nav{
     padding-bottom: 2rem;
 }
 
-.header__title{
+.header__title--big{
+    margin-left: 3rem;
+}
+
+.title--big{
     color:var(--color-light);
     font-weight: 900;
     font-size: 4rem;
-    margin-left: 3rem;
 }
 
 .button--buy{
     background-color: var(--color-bandera-amarillo);
     padding: 1rem 2rem;
     color:var(--color-dark);
+    border-radius: 10px;
+}
+
+.button--buy--normal{
     font-weight: 600;
     font-size: 1rem;
-    border-radius: 10px;
     margin-left: 3rem;
+}
+
+.button--buy--big{
+    font-size: 1.5rem;
+    font-weight: 900;
 }
 
 .bloque--datos{
     background-color: var(--color-bandera-amarillo);
     justify-content: space-around;
     padding: 2rem 15%;
+}
+
+.bloque--servicios{
+    display:flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap:4rem;
+    padding: 3rem;
+}
+
+.bloque--servicios__div{
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 300px;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+    outline: var(--color-white-filter) 15px solid;
+}
+
+.bloque--servicios__h3{
+    text-transform: uppercase;
+    color:white;
+    font-weight: 600;
+    text-shadow: -2px 0px 5px rgba(0,0,0,0.6);
+    font-size: 2rem;
+}
+
+.bloque--texto{
+    display:flex;
+    padding: 2rem 0;
+    gap: 2rem;
+}
+
+.bloque--texto hr{
+    border: var(--color-principal-green) 4px solid;
+    width: 20%;
+}
+
+.bloque--texto__contenido{
+    flex: 1 1 0;
+}
+
+.bloque--texto__contenido h2, .bloque--texto__contenido p{
+    padding-left: 2rem;
+}
+
+.bloque--texto__contenido h2{
+    color:var(--color-principal-green);
+    font-weight: 900;
+}
+
+.bloque--texto__contenido p{
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.bloque--texto__foto{
+    flex: 1 1 0;
+}
+
+.bloque--texto__foto img{
+    border-radius: 30px 0 0 30px;
+}
+
+.bloque--fotos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: column;
+}
+
+.bloque--fotos div:first-child{
+    grid-row-start:span 2;
+    height: 100%;
+    grid-column-start:span 2;
+}
+
+.bloque--fotos div:last-child{
+    grid-row-start:span 2;
+    height: 100%;
+}
+
+.bloque--fotos div{
+    overflow: hidden;
+    
+}
+
+.bloque--fotos img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+.bloque--fotos img:hover{
+    transform: scale(1.3);
+}
+
+.bloque--servicios__video{
+    width: 500px;
+}
+
+.bloque--texto-especial{
+    text-align: center;
+    padding: 3rem;
+}
+
+.bloque--texto-especial h2{
+    font-weight: 900;
+    text-transform: uppercase;
+    color:white;
+}
+
+.bloque--texto__lista{
+    color:var(--color-principal-green);
+    font-weight: 600;
+    list-style: square;
+    align-self: center;
+    padding-left: 3rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    padding-top: 1rem;
+}
+
+.bloque--llamativo{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.bloque--pagos{
+    color:black;
+    background-color: var(--color-bandera-amarillo);
+    padding: 1rem 2rem;
+    justify-content: space-between;
+}
+
+.bloque--pagos__title{
+    color:black;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.bloque--pagos__lista{
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.bloque--pagos__div{
+    font-weight: 600;
+    font-size: 1.2rem;
+    gap:1rem;
+}
+
+.bloque--pie-datos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 2rem;
+    background-color: var(--color-gray);
+    color:white;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    grid-auto-flow: column;
+}
+
+.bloque--pie-datos__columna{
+    text-align: left;
+    height: 100%;
+    
+}
+
+.bloque--pie-datos__columna:first-child, .bloque--pie-datos__columna:last-child{
+    grid-row-start:span 2;
+}
+
+.bloque--pie-datos__columna h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.mapa{
+    max-width: 60%;
+}
+
+.bloque--pie-datos__logo{
+    max-width: 60%;
+}
+
+.bloque--autoria{
+    background-color: var(--color-dark);
+    color:white;
+    padding: 1rem;
+}
+
+.bloque--autoria a{
+    color:white;
 }
