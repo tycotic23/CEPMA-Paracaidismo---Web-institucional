@@ -31,6 +31,7 @@ html{
     --color-gray:#303030;
     --color-bk-link-button:var(--color-bandera-amarillo);
     --color-dark-filter:rgba(0, 0, 0, 0.705);
+    --color-bk-link-button-hover:#ffe3a0;
 }
 
 /* generales */
@@ -69,6 +70,8 @@ button{
     border:none;
     margin-top: 1rem;
 }
+
+
 
 .bloque{
     width: 100%;
@@ -130,6 +133,10 @@ button{
     padding: 1rem 2rem;
     border-radius: 5px;
     font-weight: 600;
+}
+
+.link-button:hover{
+    background-color: var(--color-bk-link-button-hover);
 }
 
 .icono-muy-pequeño{
@@ -318,10 +325,15 @@ button{
     top:0;
     z-index: 1;
 }
+
+.barra-superior img{
+    padding: 0.3rem;
+}
 .lista-barra{
     display:flex;
     font-size: 1rem;
     align-items: center;
+    gap:0.3rem;
 }
 
 nav{
@@ -343,6 +355,10 @@ nav{
     color:black;
     font-weight: 600;
     text-decoration: none;
+}
+
+.lista-nav a:hover{
+    color:var(--color-principal-green);
 }
 
 
@@ -373,6 +389,10 @@ nav{
     border-radius: 10px;
 }
 
+.button--buy:hover{
+    background-color: var(--color-bk-link-button-hover);
+}
+
 .button--buy--normal{
     font-weight: 600;
     font-size: 1rem;
@@ -388,6 +408,20 @@ nav{
     background-color: var(--color-bandera-amarillo);
     justify-content: space-around;
     padding: 2rem 15%;
+}
+
+.datos__div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 900;
+    max-width: 150px;
+    text-align: center;
+}
+
+.datos__div span{
+    font-size: 2rem;
 }
 
 .bloque--servicios{
@@ -492,6 +526,12 @@ nav{
 
 .bloque--servicios__video{
     width: 500px;
+    outline: var(--color-white-filter) 15px solid;
+    height: 300px;
+}
+
+.bloque--servicios__video img{
+    height: 100%;
 }
 
 .bloque--texto-especial{
