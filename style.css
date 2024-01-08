@@ -71,6 +71,9 @@ button{
     margin-top: 1rem;
 }
 
+ul{
+    list-style: none;
+}
 
 
 .bloque{
@@ -118,10 +121,16 @@ button{
     background-attachment: fixed;
 }
 
-.fondo--header{
+.fondo--footer{
     background-image: url(assets/headerbk.jpg);
     background-position-y: center;
 }
+
+.fondo--header{
+    background-image: url(assets/fotos/header.jpg);
+    background-position: center 30%;
+}
+
 
 .bloque__img--banner{
     max-height: 50vh;
@@ -345,7 +354,6 @@ nav{
 }
 
 .lista-nav{
-    list-style: none;
     
     gap:2rem;
     
@@ -511,7 +519,6 @@ nav{
 
 .bloque--fotos div{
     overflow: hidden;
-    
 }
 
 .bloque--fotos img{
@@ -548,7 +555,6 @@ nav{
 .bloque--texto__lista{
     color:var(--color-principal-green);
     font-weight: 600;
-    list-style: square;
     align-self: center;
     padding-left: 3rem;
     font-size: 1.5rem;
@@ -556,6 +562,26 @@ nav{
     flex-direction: column;
     gap:1rem;
     padding-top: 1rem;
+}
+
+.bloque--texto__lista li::before {
+    display: inline-block;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url(assets/ok-circle-filled.svg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 0.5rem;
+
+    position: absolute;
+   
+    left: 0;
+    top: 0;
+}
+.bloque--texto__lista li {
+    position: relative;
+    text-indent: 2em;
 }
 
 .bloque--llamativo{
@@ -633,4 +659,23 @@ nav{
 
 .bloque--autoria a{
     color:white;
+}
+
+.fondo--salto-deportivo{
+    background-image: url(assets/fotos/servicio-salto-deportivo.jpg);
+
+}
+
+.fondo--vuelo-bautismo{
+    background-image: url(assets/fotos/avioneta.jpg);
+}
+
+.fondo--curso-paracaidista{
+    background-image: url(assets/fotos/instructor-servicio.jpg);
+    background-position: center;
+}
+
+.fondo--bautismo{
+    background-image: url(assets/fotos/fondo-foter.jpg);
+    background-position: center;
 }
