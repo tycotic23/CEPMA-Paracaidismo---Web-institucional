@@ -46,6 +46,15 @@ h1{
     align-self: center;
 }
 
+.icono-link{
+    display:flex;
+    justify-content: center;
+}
+
+.icono-link:hover{
+    background-color: #535353;
+}
+
 /* h1{
     text-transform: uppercase;
     font-weight: 900;
@@ -251,9 +260,9 @@ ul{
     align-items: center;
 }
 
-.mapa{
-    width: 800px;
-}
+/* .mapa{
+    width: 500px;
+} */
 
 .lista-lateral{
     align-items: flex-end;
@@ -544,6 +553,9 @@ nav{
 .bloque--texto-especial{
     text-align: center;
     padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bloque--texto-especial h2{
@@ -552,12 +564,17 @@ nav{
     color:white;
 }
 
+.bloque--texto-especial p{
+    width: 60%;
+    padding-bottom: 2rem;
+}
+
 .bloque--texto__lista{
     color:var(--color-principal-green);
     font-weight: 600;
     align-self: center;
     padding-left: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     display: flex;
     flex-direction: column;
     gap:1rem;
@@ -567,8 +584,8 @@ nav{
 .bloque--texto__lista li::before {
     display: inline-block;
     content: '';
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-image: url(assets/ok-circle-filled.svg);
     background-size: cover;
     background-position: center;
@@ -618,7 +635,7 @@ nav{
 .bloque--pie-datos{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: 1fr;
     padding: 2rem;
     background-color: var(--color-gray);
     color:white;
@@ -632,6 +649,11 @@ nav{
     text-align: left;
     height: 100%;
     
+}
+
+.bloque--pie-datos__columna a{
+    text-decoration: none;
+    color:white;
 }
 
 .bloque--pie-datos__columna:first-child, .bloque--pie-datos__columna:last-child{

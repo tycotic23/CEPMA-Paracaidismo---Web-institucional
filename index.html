@@ -18,20 +18,21 @@
             </div>
             <div class="lista-barra">
                 <p>Seguinos</p>
-                <img class="icono-muy-pequeño" src="assets/instagram.svg" alt="instagram">
+                <a class="icono-link" href="https://www.instagram.com/cepmaparacaidismo"><img class="icono-muy-pequeño" src="assets/instagram.svg" alt="instagram"></a>
                 <img class="icono-muy-pequeño" src="assets/youtube.svg" alt="youtube">
                 <p>Ver videos</p>
-                <img class="icono-muy-pequeño" src="assets/play-blanco.svg" alt="play">
+                <a class="icono-link" href="#videos"><img class="icono-muy-pequeño" src="assets/play-blanco.svg" alt="play"></a>
             </div>
         </div>
         <!-- navegador -->
         <nav class="lista-barra">
             <ul class="lista-barra lista-nav">
-                <li><a href="">Cursos</a></li>
-                <li><a href="">Saltos</a></li>
-                <li><a href="">Videos</a></li>
-                <li><a href="">Nosotros</a></li>
-                <li><a href="">Cómo llegar</a></li>
+                <li><a href="#servicios">Cursos</a></li>
+                <li><a href="#servicios">Saltos</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#historia">Nosotros</a></li>
+                <li><a href="#ubicacion">Cómo llegar</a></li>
+                <li><a href="#contacto">Contactos</a></li>
             </ul>
             <img class="icono-pequeño" src="assets/logo-CEPMA.svg" alt="CEPMA - Escuela de Paracaidismo">
         </nav>
@@ -62,7 +63,7 @@
             </div>
         </div>
         <!-- Servicios -->
-        <div class="bloque--servicios bloque fondo bk-nubes fondo--paralax">
+        <div id="servicios" class="bloque--servicios bloque fondo bk-nubes fondo--paralax">
             <div class="bloque--servicios__div fondo--bautismo">
                 <h3 class="bloque--servicios__h3">Salto de Bautismo</h3>
                 <p>Descripcion del servicio</p>
@@ -90,7 +91,7 @@
             </div>
         </div>
          <!-- descripcion del lugar y del instructor -->
-         <div class="bloque bloque--texto">
+         <div id="historia" class="bloque bloque--texto">
             <div class="bloque--texto__contenido">
                 <h2>ESCUELA DE PARACAIDISMO<br>MALVINAS ARGENTINAS</h2>
                 <hr>
@@ -120,7 +121,7 @@
 
           <!-- videos -->
           <div class="bloque fondo bk-nubes bloque--servicios fondo--paralax">
-            <div class="bloque--servicios__video">
+            <div class="bloque--servicios__video" id="videos">
                 <img src="assets/headerbk.jpg" alt="la escuela">
             </div>
             <div class="bloque--servicios__video">
@@ -146,10 +147,14 @@
         <div class="bloque bloque--texto-especial fondo bk-nubes fondo--paralax">
             <h2>El clima</h2>
             <p>
-                Nuestra actividad depende del clima por lo que es importante que estés atento al pronóstico metereológico
-                orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                Nuestra actividad depende del clima. Para que disfrutes al máximo y sin complicaciones recomendamos revisar el pronostico unos pocos días antes del salto. En caso de suspender tu salto reprogramaremos la reserva para otro día. 
             </p>
+            <h2>RESERVAS</h2>
+            <p>
+                Es muy simple. Podés comunicarte con nosotros a través de Whatsapp y reservar, incluso, la misma semana que vas a saltar. Ahí mismo podés despejarte todas las dudas. <br>
+                En caso de no poder asistir por decisión propia, se podrá reprogramar por 48hs con anticipo.
+            </p>
+            <button class="button--buy button--buy--big">Reservá ahora</button>
             
         </div>
 
@@ -158,10 +163,15 @@
             <div class="bloque--texto__contenido">
                 <h2>REQUISITOS</h2>
                 <ul class="bloque--texto__lista">
+                    <li>NO ES NECESARIO EXPERIENCIA PREVIA</li>
+                    <li>En caso de superar los 90Kg. consultar</li>
                     <li>Ser mayor de 16 años</li>
-                    <li>Pesar menos de 95kg *Consultar en caso de superar ese peso</li>
-                    <li>Ser mayor de 16 años</li>
-                    <li>Ser mayor de 16 años</li>
+                    <li>NO CONSUMIR ALCOHOL O DROGAS ANTES DEL SALTO</li>
+                    <li>Se aconseja no saltar congestionado</li>
+                    <li>No estar cursando un embarazo</li>
+                    <li>Se recomienda previamente consultar con tu médico de confianza. Se sugiere no saltar si se sufre de problemas del corazón, enfermedades que afecten el juicio de alguna forma, problemas de columna, problemas en brazos o piernas.</li>
+                    <li>Si utilizás prótesis o lentes de contactos avisar al instructor</li>
+                    <li>¡Ganas de pasarla bien!</li>
                 </ul>
             </div>
             <div class="bloque--texto__foto">
@@ -195,25 +205,31 @@
         <!-- ubicacion y contacto -->
         <div class="bloque bloque--pie-datos">
             <div class="bloque--pie-datos__columna">
-                <h2>UBICACIÓN</h2>
+                <h2 id="ubicacion">UBICACIÓN</h2>
                 <!-- reemplazar por mapa google -->
-                <img class="mapa" src="assets/headerbk.jpg" alt="la escuela">
-                <p>Nos encontramos pasando el 2do jasdiaj skdajs d</p>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.732877817202!2d-59.134051625110274!3d-35.213122089935894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bda9897037b76f%3A0x31712d04c6632dbc!2sCEPMA%20Paracaidismo!5e0!3m2!1ses-419!2sar!4v1704746842263!5m2!1ses-419!2sar" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <p>Nos encontramos en RN205 Km 106, B7240 Lobos, Provincia de Buenos Aires</p>
+                <p>Nuestro hangar se llama Malvinas Argentinas</p>
+                <p>¡Te esperamos!</p>
             </div>
-            <div class="bloque--pie-datos__columna">
+            <div class="bloque--pie-datos__columna" id="contacto">
                 <h2>CONTACTO</h2>
                 <ul>
-                    <li>+54 9 54564 54</li>
+                    <li>+54 9 11 5146-4963</li>
                     <li>asdasd@asdasdas.com</li>
                     <li>asd asdas dsd</li>
                 </ul>
-            </div>
-            <div class="bloque--pie-datos__columna">
+                <h2>HORARIOS</h2>
+                <ul>
+                    <li>Lunes a viernes de 9am a 6pm</li>
+                    <li>Sábados y domingos de 7am a 6pm</li>
+                </ul>
                 <h2>REDES</h2>
                 <ul>
-                    <li>+54 9 54564 54</li>
-                    <li>asdasd@asdasdas.com</li>
-                    <li>asd asdas dsd</li>
+                    <li><a href="https://www.instagram.com/cepmaparacaidismo"><b>Instagram</b></a></li>
+                    <li><a href=""><b>You tube</b></a></li>
                 </ul>
             </div>
             <div class="bloque--pie-datos__columna">
@@ -223,7 +239,7 @@
         <!-- hecho por -->
         <div class="bloque bloque--horizontal bloque--autoria">
             <p>© Copyright 2024 C.E.P.M.A Escuela de Paracaidismo</p>
-            <p class="text-right">Desarrollado por <a href="">Tomas Stevan</a></p>
+            <p class="text-right">Desarrollado por <a href="https://tomasstevan.com.ar/">Tomas Stevan</a></p>
         </div>
     </footer>
 
