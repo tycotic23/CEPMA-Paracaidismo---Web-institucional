@@ -140,6 +140,9 @@ ul{
     background-position: center 30%;
 }
 
+.fondo--cuadro-caracteristica{
+    background-color: var(--color-white-filter);
+}
 
 .bloque__img--banner{
     max-height: 50vh;
@@ -477,7 +480,12 @@ nav{
     gap: 2rem;
 }
 
-.bloque--texto hr{
+.bloque--texto-completo{
+    display:flex;
+    gap: 2rem;
+}
+
+.bloque--texto hr,.bloque--texto-completo hr{
     border: var(--color-principal-green) 4px solid;
     width: 20%;
 }
@@ -491,7 +499,8 @@ nav{
 }
 
 .bloque--texto__contenido h2{
-    color:var(--color-principal-green);
+    /* color:var(--color-principal-green); */
+    color:black;
     font-weight: 900;
 }
 
@@ -506,6 +515,15 @@ nav{
 
 .bloque--texto__foto img{
     border-radius: 30px 0 0 30px;
+}
+
+.bloque--texto__foto--completa{
+    flex: 1 1 0;
+}
+
+.bloque--texto__foto--completa img{
+   width: 100%;
+   height: 100%;
 }
 
 .bloque--fotos{
@@ -558,10 +576,17 @@ nav{
     align-items: center;
 }
 
-.bloque--texto-especial h2{
+.bloque--texto-especial__h2{
     font-weight: 900;
     text-transform: uppercase;
     color:white;
+}
+
+
+.bloque--texto-especial__h2--white{
+    /* color:var(--color-principal-green); */
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 .bloque--texto-especial p{
@@ -569,8 +594,13 @@ nav{
     padding-bottom: 2rem;
 }
 
+.bloque--texto-especial ul{
+    text-align: left;
+    width: 60%;
+}
+
 .bloque--texto__lista{
-    color:var(--color-principal-green);
+    /* color:var(--color-principal-green); */
     font-weight: 600;
     align-self: center;
     padding-left: 3rem;
@@ -700,4 +730,20 @@ nav{
 .fondo--bautismo{
     background-image: url(assets/fotos/fondo-foter.jpg);
     background-position: center;
+}
+
+.header--landing{
+    min-height: 80vh;
+    background-position: center 10%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.header__side{
+    padding: 2rem;
+}
+
+.header__parrafo{
+    margin-left: 3rem;
+    font-weight: 900;
 }
