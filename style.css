@@ -494,6 +494,10 @@ nav{
     color:var(--color-dark);
 }
 
+.banner-text__h2--heavy{
+    font-weight: 900;
+}
+
 .banner-text__h3{
     font-size: 1.6rem;
     
