@@ -32,6 +32,7 @@ html{
     --color-bk-link-button:var(--color-bandera-amarillo);
     --color-dark-filter:rgba(0, 0, 0, 0.705);
     --color-bk-link-button-hover:#ffe3a0;
+    scroll-behavior: smooth;
 }
 
 /* generales */
@@ -101,6 +102,8 @@ ul{
     flex-direction: column;
 }
 
+
+
 .bloque--columna{
     display:flex;
     align-items: flex-start;
@@ -135,6 +138,21 @@ ul{
     background-attachment: fixed;
 }
 
+.fondo--atardecer{
+    background-image: url(assets/fotos/3f109847-8b25-4953-a42f-1dda23e82a17.jpeg);
+    background-position-y:70%;
+}
+
+.fondo--cursos-corte-1{
+    background-image: url(assets/fotos/cayendo.jpeg);
+    background-position-y:center ;
+}
+
+.fondo--cursos-corte-2{
+    background-image: url(assets/fotos/con-bandera.jpeg);
+    background-position-y:40%;
+}
+
 .fondo--footer{
     background-image: url(assets/headerbk.jpg);
     background-position-y: center;
@@ -162,12 +180,9 @@ ul{
 }
 
 a.link-button{
-    background-color: var(--color-bk-link-button);
-    padding: 1rem 2rem;
     margin-top: 1rem;
-    border-radius: 5px;
-    font-weight: 600;
     color: black;
+    display: inline-block;
     text-decoration: none;
 }
 
@@ -467,6 +482,10 @@ nav{
     
 }
 
+.margin{
+    margin: 2rem;
+}
+
 .banner-text--center{
     text-align: center;
 }
@@ -519,8 +538,9 @@ nav{
 
 .bloque--etapas{
     display:grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit,1fr);
     grid-template-rows: repeat(auto-fill,1fr);
+    grid-auto-columns: 1fr;
     align-items: center;
     justify-content: center;
    /* background-color: var(--color-bandera-amarillo); */
@@ -549,6 +569,12 @@ nav{
 .bloque--etapas__div__p{
     font-size: 1.4rem;
     
+}
+
+a.button--buy{
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
 }
 
 .button--buy{
@@ -650,8 +676,8 @@ nav{
     flex: 1 1 0;
 }
 
-.bloque--texto__contenido h2, .bloque--texto__contenido p{
-    padding-left: 2rem;
+.bloque--texto__contenido h2, .bloque--texto__contenido p, .bloque--texto__contenido a{
+    margin-left: 2rem;
 }
 
 .bloque--texto__contenido h2{
@@ -667,10 +693,14 @@ nav{
 
 .bloque--texto__foto{
     flex: 1 1 0;
+    
 }
 
 .bloque--texto__foto img{
     border-radius: 30px 0 0 30px;
+    max-height: 60vh;
+    width: 100%;
+    object-fit: cover;
 }
 
 .bloque--texto__foto--completa{
@@ -870,17 +900,22 @@ nav{
 }
 
 .fondo--salto-deportivo{
-    background-image: url(assets/fotos/servicio-salto-deportivo.jpg);
+    background-image: url(assets/fotos/saltando.jpeg);
 
 }
 
 .fondo--vuelo-bautismo{
-    background-image: url(assets/fotos/avioneta.jpg);
+    background-image: url(assets/fotos/avioneta2.jpg);
+    background-position-x: center;
 }
 
 .fondo--curso-paracaidista{
-    background-image: url(assets/fotos/instructor-servicio.jpg);
-    background-position: center;
+    background-image: url(assets/fotos/servicio-salto-deportivo.jpg);
+    
+}
+
+.fondo--dospersonas{
+    background-image: url(assets/fotos/atados2.jpg);
 }
 
 .fondo--bautismo{
@@ -890,10 +925,14 @@ nav{
 
 .header--landing{
     min-height: 60vh;
-    background-position: center 10%;
+    
     display:flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header--landing--corrido{
+    background-position: center 10%;
 }
 
 .header__side{
