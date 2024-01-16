@@ -90,7 +90,10 @@ ul{
     list-style: none;
 }
 
-
+.none-a{
+    color: inherit;
+    text-decoration: none;
+}
 .bloque{
     width: 100%;
 }
@@ -318,6 +321,10 @@ a.link-button{
     padding-top: 2rem;
 }
 
+.margin-top{
+    margin-top: 2rem;
+}
+
 .bloque--tarjeta__contenido{
     color:black;
     padding: 1rem;
@@ -507,7 +514,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     column-gap: 1rem;
-    padding: 0 2rem;
+    padding: 1rem 2rem 2rem;
 }
 
 .fotos-grilla-4 img{
@@ -586,6 +593,7 @@ a.button--buy{
     padding: 1rem 2rem;
     color:var(--color-dark);
     border-radius: 10px;
+    margin-left: 3rem;
 }
 
 .button--buy:hover{
@@ -595,7 +603,7 @@ a.button--buy{
 .button--buy--normal{
     font-weight: 600;
     font-size: 1rem;
-    margin-left: 3rem;
+    
 }
 
 .button--buy--invertido{
@@ -603,6 +611,15 @@ a.button--buy{
     padding: 1rem 2rem;
     background-color:var(--color-dark);
     border-radius: 10px;
+}
+
+a.button--buy--invertido{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button--buy--invertido:hover{
+    background-color:#252525;
 }
 
 .button--buy--big{
@@ -666,6 +683,13 @@ a.button--buy{
     gap: 2rem;
 }
 
+.bloque--texto__item{
+    padding-left: 2rem;
+    gap:1rem;
+    padding-top: 0.5rem;
+    font-weight: 900;
+}
+
 .bloque--texto-completo{
     display:flex;
     gap: 2rem;
@@ -680,7 +704,7 @@ a.button--buy{
     flex: 1 1 0;
 }
 
-.bloque--texto__contenido h2, .bloque--texto__contenido p, .bloque--texto__contenido a{
+.bloque--texto__contenido>h2, .bloque--texto__contenido>p, .bloque--texto__contenido>a{
     margin-left: 2rem;
 }
 
