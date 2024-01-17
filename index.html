@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CEPMA - Escuela de Paracaidismo</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- css -->
+    <link media="all" rel="stylesheet" href="first.css">
+    <link media="all" rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="style.css">
+    </noscript>
     <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+    <!-- precarga de img del heder-->
+    <link rel="preload" fetchpriority="high" as="image" href="assets/fotos/header.jpg" type="image/jpg">
+    <!-- tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <!--  -->
 </head>
 <body>
     <header class="bloque bloque--centrado fondo fondo--header">
@@ -46,106 +58,121 @@
         </div>
     </header>
     <main>
-        <!-- datos utiles -->
-        <div class="lista-barra bloque bloque--datos">
-            <div class="datos__div">
-                <img loading="lazy" class="icono-mediano" src="assets/tandem-icono.svg" alt="">
-                <p>NO NECESITÁS EXPERIENCIA PREVIA</p>
-            </div>
-            <div class="datos__div">
-                <img loading="lazy" class="icono-mediano" src="assets/speedometer-sharp.svg" alt="">
-                <p><span>200</span>Km/h</p>
-                <p>40'' de caída libre</p>
-            </div>
-            <div class="datos__div">
-                <img loading="lazy" class="icono-mediano" src="assets/favicon.svg" alt="">
-                <p><span>3000</span>mts de altura</p>
-            </div>
-        </div>
-        <!-- Servicios -->
-        <div id="servicios" class="bloque--servicios bloque fondo bk-nubes fondo--paralax">
-            <div class="bloque--servicios__div fondo--bautismo">
-                <h3 class="bloque--servicios__h3">Salto de Bautismo</h3>
-                <a class="link-button self-center" href="saltodebautismo.html" >VER MÁS</a>
-            </div>
-            <div class="bloque--servicios__div fondo--curso-paracaidista">
-                <h3 class="bloque--servicios__h3">Curso de paracaidista deportivo</h3>
-                <a class="link-button self-center" href="cursos.html#salto-deportivo">VER MÁS</a>
-            </div>
-            <div class="bloque--servicios__div fondo--header">
-                <h3 class="bloque--servicios__h3">Curso de instructor tandem</h3>
-                <a class="link-button self-center" href="cursos.html#dual-tandem">VER MÁS</a>
-            </div>
-            <div class="bloque--servicios__div fondo--vuelo-bautismo">
-                <h3 class="bloque--servicios__h3">Vuelos de bautismo</h3>
-                <a class="link-button self-center" href="https://wa.me/5491151464963">CONSULTAR</a>
-            </div>
-            <div class="bloque--servicios__div fondo--salto-deportivo">
-                <h3 class="bloque--servicios__h3">Salto deportivo</h3>
-                <a class="link-button self-center" href="https://wa.me/5491151464963">CONSULTAR</a>
-            </div>
-        </div>
-         <!-- descripcion del lugar y del instructor -->
-         <div id="historia" class="bloque bloque--texto">
-            <div class="bloque--texto__contenido">
-                <h2>ESCUELA DE PARACAIDISMO<br>MALVINAS ARGENTINAS</h2>
-                <hr>
-                <p>
-                    Los instructores de la Escuela Malvinas Argentinas somos, en su mayoría, ex integrantes de una unidad de élite de la Fuerza Aérea Argentina con una basta experiencia en dictar cursos de paracaidismo.
-                    El fundador de nuestra escuela le da el nombre <b>Malvinas Argentinas</b> por ser veterando de la guerra por recuperarlas aquel 02 de abril de 1982 y ex integrante del GOE (Grupo de Operaciones Especiales).
-                    <br>
-                    Solo prometemos en nuestros cursos, seguridad, transparencia y mucha paciencia con los alumnos. <b>Vení a conocer nuestra Escuela Malvinas Argentinas.</b>
-                </p>
-                <div class="lista-barra bloque--texto__item">
-                    <img loading="lazy" class="icono-muy-pequeño" src="assets/location-pin.svg" alt="ubicacion">
-                    <p>RN205 Km 106, B7240 Lobos, Provincia de Buenos Aires</p>
+            <!-- datos utiles -->
+            <div class="lista-barra bloque bloque--datos">
+                <div class="datos__div">
+                    <img loading="lazy" class="icono-mediano" src="assets/tandem-icono.svg" alt="">
+                    <p>NO NECESITÁS EXPERIENCIA PREVIA</p>
+                </div>
+                <div class="datos__div">
+                    <img loading="lazy" class="icono-mediano" src="assets/speedometer-sharp.svg" alt="">
+                    <p><span>200</span>Km/h</p>
+                    <p>40'' de caída libre</p>
+                </div>
+                <div class="datos__div">
+                    <img loading="lazy" class="icono-mediano" src="assets/favicon.svg" alt="">
+                    <p><span>3000</span>mts de altura</p>
                 </div>
             </div>
-            <div class="bloque--texto__foto">
-                <img loading="lazy" src="assets/fotos/galpon.jpeg" alt="la escuela">
+            <!-- Servicios -->
+            <div id="servicios" class="bloque--servicios bloque fondo bk-nubes fondo--paralax">
+                <div class="bloque--servicios__div fondo--bautismo">
+                    <h3 class="bloque--servicios__h3">Salto de Bautismo</h3>
+                    <a class="link-button self-center" href="saltodebautismo.html" >VER MÁS</a>
+                </div>
+                <div class="bloque--servicios__div fondo--curso-paracaidista">
+                    <h3 class="bloque--servicios__h3">Curso de paracaidista deportivo</h3>
+                    <a class="link-button self-center" href="cursos.html#salto-deportivo">VER MÁS</a>
+                </div>
+                <div class="bloque--servicios__div fondo--header">
+                    <h3 class="bloque--servicios__h3">Curso de instructor tandem</h3>
+                    <a class="link-button self-center" href="cursos.html#dual-tandem">VER MÁS</a>
+                </div>
+                <div class="bloque--servicios__div fondo--vuelo-bautismo">
+                    <h3 class="bloque--servicios__h3">Vuelos de bautismo</h3>
+                    <a class="link-button self-center" href="https://wa.me/5491151464963">CONSULTAR</a>
+                </div>
+                <div class="bloque--servicios__div fondo--salto-deportivo">
+                    <h3 class="bloque--servicios__h3">Salto deportivo</h3>
+                    <a class="link-button self-center" href="https://wa.me/5491151464963">CONSULTAR</a>
+                </div>
             </div>
-         </div>
+            <!-- descripcion del lugar y del instructor -->
+            <div id="historia" class="bloque bloque--texto">
+                <div class="bloque--texto__contenido">
+                    <h2>ESCUELA DE PARACAIDISMO<br>MALVINAS ARGENTINAS</h2>
+                    <hr>
+                    <p>
+                        Los instructores de la Escuela Malvinas Argentinas somos, en su mayoría, ex integrantes de una unidad de élite de la Fuerza Aérea Argentina con una basta experiencia en dictar cursos de paracaidismo.
+                        El fundador de nuestra escuela le da el nombre <b>Malvinas Argentinas</b> por ser veterando de la guerra por recuperarlas aquel 02 de abril de 1982 y ex integrante del GOE (Grupo de Operaciones Especiales).
+                        <br>
+                        Solo prometemos en nuestros cursos, seguridad, transparencia y mucha paciencia con los alumnos. <b>Vení a conocer nuestra Escuela Malvinas Argentinas.</b>
+                    </p>
+                    <div class="lista-barra bloque--texto__item">
+                        <img loading="lazy" class="icono-muy-pequeño" src="assets/location-pin.svg" alt="ubicacion">
+                        <p>RN205 Km 106, B7240 Lobos, Provincia de Buenos Aires</p>
+                    </div>
+                </div>
+                <div class="bloque--texto__foto">
+                    <img loading="lazy" src="assets/fotos/galpon.jpeg" alt="la escuela">
+                </div>
+            </div>
 
-         <!-- <div class="bloque bloque--texto">
-            <div class="bloque--texto__contenido">
-                <h2>EL INSTRUCTOR</h2>
-                <hr>
+            <!-- <div class="bloque bloque--texto">
+                <div class="bloque--texto__contenido">
+                    <h2>EL INSTRUCTOR</h2>
+                    <hr>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="bloque--texto__foto">
+                    <img loading="lazy" src="assets/fotos/felices.jpg" alt="la escuela">
+                </div>
+            </div> -->
+
+            <!-- explicacion del clima -->
+            <div class="bloque bloque--texto-especial fondo bk-nubes fondo--paralax">
+                <h2 class="bloque--texto-especial__h2">El clima</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    Nuestra actividad depende del clima. Para que disfrutes al máximo y sin complicaciones recomendamos revisar el pronóstico unos pocos días antes del salto. En caso de suspender tu salto reprogramaremos la reserva para otro día. 
                 </p>
+                <h2 class="bloque--texto-especial__h2">RESERVAS</h2>
+                <p>
+                    Es muy simple. Podés comunicarte con nosotros a través de Whatsapp y reservar, incluso, la misma semana que vas a saltar. Ahí mismo podés despejarte todas las dudas. <br>
+                    En caso de no poder asistir por decisión propia, se podrá reprogramar por 48hs con anticipo.
+                </p>
+                <a href="https://wa.me/5491151464963" class="button--buy button--buy--big">Reservá ahora</a>
+                
             </div>
-            <div class="bloque--texto__foto">
-                <img loading="lazy" src="assets/fotos/felices.jpg" alt="la escuela">
+            <!-- videos -->
+            <div class="bloque fondo bk-nubes bloque--servicios fondo--paralax">
+                <div class="bloque--servicios__video" id="videos">
+                    <img loading="lazy" src="assets/headerbk.jpg" alt="la escuela">
+                </div>
+                <div class="bloque--servicios__video">
+                    <img loading="lazy" src="assets/headerbk.jpg" alt="la escuela">
+                </div>
             </div>
-         </div> -->
-
-         <!-- explicacion del clima -->
-        <div class="bloque bloque--texto-especial fondo bk-nubes fondo--paralax">
-            <h2 class="bloque--texto-especial__h2">El clima</h2>
-            <p>
-                Nuestra actividad depende del clima. Para que disfrutes al máximo y sin complicaciones recomendamos revisar el pronóstico unos pocos días antes del salto. En caso de suspender tu salto reprogramaremos la reserva para otro día. 
-            </p>
-            <h2 class="bloque--texto-especial__h2">RESERVAS</h2>
-            <p>
-                Es muy simple. Podés comunicarte con nosotros a través de Whatsapp y reservar, incluso, la misma semana que vas a saltar. Ahí mismo podés despejarte todas las dudas. <br>
-                En caso de no poder asistir por decisión propia, se podrá reprogramar por 48hs con anticipo.
-            </p>
-            <a href="https://wa.me/5491151464963" class="button--buy button--buy--big">Reservá ahora</a>
-            
-        </div>
-          <!-- videos -->
-          <div class="bloque fondo bk-nubes bloque--servicios fondo--paralax">
-            <div class="bloque--servicios__video" id="videos">
-                <img loading="lazy" src="assets/headerbk.jpg" alt="la escuela">
-            </div>
-            <div class="bloque--servicios__video">
-                <img loading="lazy" src="assets/headerbk.jpg" alt="la escuela">
-            </div>
-         </div>
-         <!-- requisitos -->
-         <div class="bloque bloque--texto-especial bk-light">
-            <h2 class="banner-text__h2 banner-text__h2--heavy">REQUISITOS</h2>
+            <!-- requisitos -->
+            <!-- <div class="bloque bloque--texto-especial bk-light">
+                <h2 class="banner-text__h2 banner-text__h2--heavy">REQUISITOS</h2>
+                <ul class="bloque--texto__lista">
+                    <li>NO ES NECESARIO EXPERIENCIA PREVIA</li>
+                    <li>En caso de superar los 90Kg. consultar</li>
+                    <li>Ser mayor de 16 años</li>
+                    <li>NO CONSUMIR ALCOHOL O DROGAS ANTES DEL SALTO</li>
+                    <li>Se aconseja no saltar congestionado</li>
+                    <li>No estar cursando un embarazo</li>
+                    <li>Se recomienda previamente consultar con tu médico de confianza. Se sugiere no saltar si se sufre de problemas del corazón, enfermedades que afecten el juicio de alguna forma, problemas de columna, problemas en brazos o piernas.</li>
+                    <li>Si utilizás prótesis o lentes de contactos avisar al instructor</li>
+                    <li>¡Ganas de pasarla bien!</li>
+                </ul>
+            </div> -->
+            <!-- requisitos -->
+        <div class="bloque bloque--texto-especial bk-dark">
+            <h2 class="bloque--texto-especial__h2--white">REQUISITOS</h2>
             <ul class="bloque--texto__lista">
                 <li>NO ES NECESARIO EXPERIENCIA PREVIA</li>
                 <li>En caso de superar los 90Kg. consultar</li>
@@ -157,7 +184,7 @@
                 <li>Si utilizás prótesis o lentes de contactos avisar al instructor</li>
                 <li>¡Ganas de pasarla bien!</li>
             </ul>
-     </div>
+        </div>
          <!-- grilla de fotos -->
          <div class="bloque bloque--fotos">
             <div>

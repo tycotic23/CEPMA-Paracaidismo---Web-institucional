@@ -1,61 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap'); */
 
-/* normalizacion */
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    max-width: 100%;
-}
+
 
 img{
     object-fit: cover;
 }
 
-html{
-    font-family: 'Open Sans', sans-serif;
-    /* font-family: 'Orbitron', sans-serif; */
-}
+
 
 /* variables */
-:root{
-    --color-principal-green:#00974d;
-    --color-principal-blue:#27245f;
-    --color-bandera-celeste:#5bbfed;
-    --color-bandera-amarillo:#f9b71b;
-    --color-gris:#cfcfce;
-    --color-light:white;
-    --color-white-filter:rgba(255, 255, 255, 0.67);
-    --color-dark:black;
-    --color-gray:#303030;
-    --color-bk-link-button:var(--color-bandera-amarillo);
-    --color-dark-filter:rgba(0, 0, 0, 0.705);
-    --color-bk-link-button-hover:#ffe3a0;
-    scroll-behavior: smooth;
-}
+
 
 /* generales */
 
-h1{
-    font-weight: 900;
-    font-size: 1rem;
-    color:white;
-}
 
-h1 a{
-    color: white;
-    text-decoration: none;
-}
 
 .self-center{
     align-self: center;
 }
 
-.icono-link{
-    display:flex;
-    justify-content: center;
-}
+
 
 .icono-link:hover{
     background-color: #535353;
@@ -86,24 +50,14 @@ button{
     margin-top: 1rem;
 }
 
-ul{
-    list-style: none;
-}
+
 
 .none-a{
     color: inherit;
     text-decoration: none;
 }
-.bloque{
-    width: 100%;
-}
 
-.bloque--centrado{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
+
 
 
 
@@ -132,10 +86,7 @@ ul{
     width: 100%;
 }
 
-.fondo{
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 .fondo--paralax{
     background-attachment: fixed;
@@ -193,18 +144,11 @@ a.link-button{
     background-color: var(--color-bk-link-button-hover);
 }
 
-.icono-muy-pequeño{
-    width: 30px;
-    object-fit: fill;
-}
 
-.icono-pequeño{
-    width: 50px;
-}
 
-.icono-mediano{
-    width: 100px;
-}
+
+
+
 
 .fondo--nube{
     background-color: white;
@@ -214,10 +158,7 @@ a.link-button{
     text-align: right;
 }
 
-.bk-dark{
-    background-color: var(--color-dark);
-    color:white;
-}
+
 
 .bk-light{
     background-color: var(--color-gris);
@@ -414,23 +355,12 @@ a.link-button{
 }
 
 
-.barra-superior{
-    justify-content: space-between;
-    padding: 0.2rem 1rem;
-    position:fixed;
-    top:0;
-    z-index: 1;
-}
+
 
 .barra-superior img{
     padding: 0.3rem;
 }
-.lista-barra{
-    display:flex;
-    font-size: 1rem;
-    align-items: center;
-    gap:0.3rem;
-}
+
 
 nav{
     margin-top: 3rem;
@@ -457,20 +387,9 @@ nav{
 }
 
 
-.header__content{
-    display: flex;
-    flex-direction: column;
-    padding-left: 3rem;
-    align-items: flex-start;
-    justify-content: flex-end;
-    min-height: 50vh;
-    padding-bottom: 2rem;
-}
 
-.header__title--big{
-    margin-left: 3rem;
-    line-height: 1;
-}
+
+
 
 .title--big{
     color:var(--color-light);
@@ -582,29 +501,12 @@ nav{
     
 }
 
-a.button--buy{
-    display: inline-block;
-    margin-top: 1rem;
-    text-decoration: none;
-}
 
-.button--buy{
-    background-color: var(--color-bandera-amarillo);
-    padding: 1rem 2rem;
-    color:var(--color-dark);
-    border-radius: 10px;
-    margin-left: 3rem;
-}
 
 .button--buy:hover{
     background-color: var(--color-bk-link-button-hover);
 }
 
-.button--buy--normal{
-    font-weight: 600;
-    font-size: 1rem;
-    
-}
 
 .button--buy--invertido{
     color: white;
@@ -627,25 +529,9 @@ a.button--buy--invertido{
     font-weight: 900;
 }
 
-.bloque--datos{
-    background-color: var(--color-bandera-amarillo);
-    justify-content: space-around;
-    padding: 2rem 15%;
-}
 
-.datos__div{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    font-weight: 900;
-    max-width: 150px;
-    text-align: center;
-}
 
-.datos__div span{
-    font-size: 2rem;
-}
+
 
 .bloque--servicios{
     display:flex;

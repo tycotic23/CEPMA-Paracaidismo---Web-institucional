@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CEPMA - Salto de Bautismo</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- css -->
+    <link media="all" rel="stylesheet" href="first.css">
+    <link media="all" rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="style.css">
+    </noscript>
     <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+    <!-- precarga de img del heder-->
+    <link rel="preload" fetchpriority="high" as="image" href="assets/fotos/con-bandera.jpeg" type="image/jpg">
+    <!-- tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <!--  -->
 </head>
 <body>
     <header class="bloque fondo fondo--cursos-corte-2 header--landing">
