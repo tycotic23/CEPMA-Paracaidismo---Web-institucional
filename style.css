@@ -6,32 +6,24 @@ img{
     object-fit: cover;
 }
 
-
-
-/* variables */
-
-
-/* generales */
-
+.barra-fija{
+    position: fixed;
+    top: 0;
+}
 
 
 .self-center{
     align-self: center;
 }
 
-
+.botones-linea{
+    display: flex;
+    gap:1rem;
+}
 
 .icono-link:hover{
     background-color: #535353;
 }
-
-/* h1{
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 2rem;
-    font-style: oblique;
-    min-width: max-content;
-} */
 
 h2{
     color:var(--color-bandera-amarillo);
@@ -363,11 +355,17 @@ a.link-button{
 
 
 nav{
-    margin-top: 3rem;
+    margin-top: 1rem;
     background-color: var(--color-white-filter);
     border-radius: 50px;
     padding-left: 2rem;
-    gap:1rem;
+}
+
+nav.scroll{
+    margin-top: 0;
+    border-radius: 0;
+    width: 100%;
+    padding-left: 2rem;
 }
 
 .lista-nav{
@@ -574,6 +572,11 @@ a.button--buy--invertido{
     gap:1rem;
     padding-top: 0.5rem;
     font-weight: 900;
+
+    display:flex;
+    font-size: 1rem;
+    align-items: center;
+    gap:0.3rem;
 }
 
 .bloque--texto-completo{
@@ -769,7 +772,7 @@ a.button--buy--invertido{
     padding: 2rem;
     background-color: var(--color-gray);
     color:white;
-    align-items: center;
+    /* align-items: center; */
     justify-items: center;
     justify-content: center;
     grid-auto-flow: column;
@@ -777,7 +780,6 @@ a.button--buy--invertido{
 
 .bloque--pie-datos__columna{
     text-align: left;
-    height: 100%;
     
 }
 
@@ -786,8 +788,11 @@ a.button--buy--invertido{
     color:white;
 }
 
-.bloque--pie-datos__columna:first-child, .bloque--pie-datos__columna:last-child{
-    grid-row-start:span 2;
+.bloque--pie-datos__columna:last-child{
+   justify-self: end;
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
 }
 
 .bloque--pie-datos__columna h2{
@@ -863,9 +868,11 @@ a.button--buy--invertido{
 }
 
 .header__parrafo{
-    margin-left: 3rem;
     font-weight: 900;
 }
+
+
+
 
 .banner--text{
     font-weight: 900;
@@ -877,6 +884,423 @@ a.button--buy--invertido{
     color: var(--color-bandera-amarillo);
 }
 
-/* .banner-curso-paracaidista{
-    min-height: ;
-} */
+/* responsive */
+@media (max-width: 950px) {
+    .bloque--fotos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .bloque--pie-datos{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+        grid-auto-flow: row;
+    }
+
+    .bloque--pie-datos__columna:last-child{
+        grid-column: span 2;
+    }
+
+    .lista-barra {
+        font-size: 0.8rem;
+    }
+
+    .bloque--texto-especial {
+        padding: 1rem;
+    }
+
+    
+}
+
+@media (max-width: 860px) {
+    .margin-left{
+        margin-left: 0;
+    }
+
+    .title--big {
+        font-size: 3rem;
+    }
+
+    .bloque--pie-datos__logo {
+        max-width: 40%;
+    }
+
+    .icono-mediano {
+        width: 70px;
+    }
+
+    /* esta clase quita elementos poco relevantes para pantallas pequeñas */
+    .nophone{
+        display:none;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+
+    .bloque--tarjeta{
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 787px) {
+    .lista-barra {
+        flex-wrap: wrap;
+    }
+
+    .barra-superior {
+        justify-content: flex-start;
+    }
+
+    h1{
+        width: 100%;
+    }
+
+    .bloque--texto-especial ul {
+        width: auto;
+    }
+
+    .bloque--servicios {
+        padding: 2rem;
+    }
+
+    /* cambio del bloque de texto de dos columnas a una con foto al costado */
+    .bloque--texto {
+        flex-direction: column-reverse;
+    }
+
+    .bloque--texto__foto{
+        width: 95%;
+        align-self: flex-end;
+    }
+
+    .bloque--texto__contenido{
+        padding-right: 2rem;
+    }
+    /*  */
+
+    .header__side__h3 {
+        font-size: 1.3rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .title--big--dark {
+        font-size: 2rem;
+    }
+
+    .banner-text--big p {
+        font-size: 2rem;
+    }
+
+    .banner-text--big span {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .icono-mediano {
+        width: 50px;
+    }
+
+    .header__content {
+        padding-left: 2rem;
+    }
+
+    .bloque--servicios {
+        padding: 2rem 1rem;
+    }
+
+    .bloque--servicios__div {
+        width: 230px;
+        min-height: 300px;
+        padding: 0.8rem;
+        outline-width:12px;
+    }
+
+    .bloque--servicios__h3{
+        font-size: 1.5rem;
+    }
+
+    .link-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    
+
+    .bloque--llamativo {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    .fotos-grilla-4 {
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+
+    .bloque--tarjeta {
+        padding: 0;
+    }
+
+    .fondo--bautismo {
+        background-size: auto 150%;
+    }
+    
+    
+}
+
+@media (max-width: 580px) {
+    .bloque--datos {
+        padding: 2rem 1rem;
+    }
+
+    .header__content {
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .title--big {
+        text-align: center;
+    }
+
+    nav {
+        border-radius: 0;
+        width: 100%;
+        padding: 1rem;
+        margin-top: 0;
+    }
+    .logo-nav{
+        display: none;
+    }
+
+    .bloque--texto-especial p {
+        width: 100%;
+    }
+
+    .bloque--pie-datos {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,auto);
+        grid-auto-flow: column;
+        justify-items: left;
+        gap: 1rem;
+    }
+
+    /* ocultar letrero de landing del titulo */
+    .header__side {
+        display: none;
+    }
+
+    .header__content {
+        padding-left: 0;
+    }
+
+    .botones-linea{
+        flex-direction: column;
+        gap:0.5rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .bloque--datos .icono-mediano {
+        width: 100px;
+    }
+
+    .bloque--datos {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .bloque--datos.p {
+        font-size: 2rem;
+    }
+
+    .bloque--datos.span {
+        font-size: 3rem;
+    }
+
+    /* aparece menu hambruguesa */
+    .menu-icon{
+        display: block;
+    }
+
+    .lista-nav{
+        display: none;
+    }
+
+    nav{
+        justify-content: flex-end;
+        padding: 0.5rem 1rem;
+    }
+
+    .m500{
+        display: none;
+    }
+
+    .bloque--fotos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .title--big--dark {
+        font-size: 1.5rem;
+    }
+
+    .banner-text--big span {
+        font-size: 2rem;
+    }
+
+    .banner-text--big p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 470px) {
+   h1{
+    font-size: 0.7rem;
+   }
+
+   .title--big {
+    font-size: 2rem;
+    }
+
+    .button--buy--big {
+        font-size: 1rem;
+    }
+
+    .button--buy {
+        padding: 0.5rem 1rem;
+    }
+
+    .button--buy--invertido{
+        padding: 0.5rem 1rem;
+    }
+
+    .bloque--texto__lista {
+        padding-left:2rem;
+        font-size: 0.8rem;
+    }
+
+    .bloque--texto__lista li::before {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .bloque--horizontal {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-right {
+        text-align: center;
+    }
+
+    .header__title--big {
+        font-size: 3rem;
+    }
+
+    .header__content {
+        padding-left: 0;
+    }
+
+    /* cambio de la cuadrilla de tarjetas de salto de bautismo */
+    .bloque--tarjeta{
+        padding: 2rem;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(auto-fit,1fr);
+    }
+    
+    .bloque--tarjeta__contenido--completo{
+        grid-column: 1 / 2;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .mapa{
+        max-width: 100%;
+    }
+
+    .bloque--pie-datos{
+        font-size: 0.8rem;
+    }
+
+    .barra-superior p{
+        display: none;
+    }
+
+    .header__title--big {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .bloque--texto__contenido>h2, .bloque--texto__contenido>p, .bloque--texto__contenido>a{
+        margin-left: 1rem;
+    }
+
+
+    /* cambio en galeria */
+    .bloque--fotos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-flow: row;
+    }
+
+    .m360{
+        display:none;
+    }
+
+    .bloque--etapas__div__p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 300px) {
+    h2 {
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: 0.8rem;
+    }
+
+    .bloque--tarjeta__contenido {
+        padding: 0.5rem;
+    }
+
+    .bloque--tarjeta {
+        padding: 1rem;
+    }
+
+    .bloque--tarjeta__h3 {
+        font-size: 1.5rem;
+    }
+
+    a.button--buy {
+        font-size: 0.8rem;
+    }
+
+    .header__title--big--large {
+        font-size: 1.8rem;
+    }
+
+    .banner--text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 240px) {
+    .title--big {
+        font-size: 1.5rem;
+        }
+
+    .header__title--big {
+        font-size: 2rem;
+    }
+}
