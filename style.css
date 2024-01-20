@@ -633,7 +633,10 @@ a.button--buy--invertido{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    gap:5px;
+    padding: 5px;
     grid-auto-flow: column;
+    background-color: var(--color-bandera-amarillo);
 }
 
 .bloque--fotos div:first-child{
