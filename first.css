@@ -82,6 +82,7 @@ h1 a{
     justify-content: flex-end;
     min-height: 70vh;
     padding-bottom: 2rem;
+    gap:1rem;
 }
 
 
@@ -129,6 +130,7 @@ a.button--buy{
 .menu-icon{
     display: none;
     width: 20px;
+    cursor: pointer;
 }
 
 .button--buy{

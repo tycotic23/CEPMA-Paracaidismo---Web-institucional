@@ -11,6 +11,53 @@ img{
     top: 0;
 }
 
+/* menu */
+
+
+/* esta clase se añade al menu cuando se lo abre desde el icono hamburguesa */
+.toggle-menu{
+    flex-direction: column;
+    display: flex ;
+    width: 100%;
+    align-items: center;
+    /* font-size: 2rem; */
+    padding: 0 1rem;
+    gap:2rem;
+    z-index: 10;
+    /* background-color: var(--color-white-filter); */
+    transition: all 0.2s ease-in-out;
+}
+
+.toggle-menu li{
+    background-color: white;
+    width: 100%;
+    padding: 0 1rem;
+    color:white !important;
+}
+
+.toggle-menu li:hover{
+    background-color: var(--color-gris);
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.toggle-menu li a{
+    display: block;
+    font-size: 1.5rem;
+    width: 100%;
+    color:black;
+    font-weight: 400;
+}
+
+.scroll-menu{
+    border-radius: 0;
+    width: 100%;
+    margin-top: 0;
+    /* padding: 1rem; */
+}
+
+/*  */
+
 
 .self-center{
     align-self: center;
@@ -359,14 +406,10 @@ nav{
     background-color: var(--color-white-filter);
     border-radius: 50px;
     padding-left: 2rem;
+    transition: all 0.4s ease-in-out;
 }
 
-nav.scroll{
-    margin-top: 0;
-    border-radius: 0;
-    width: 100%;
-    padding-left: 2rem;
-}
+
 
 .lista-nav{
     
@@ -887,6 +930,30 @@ a.button--buy--invertido{
     color: var(--color-bandera-amarillo);
 }
 
+/* animaciones */
+@keyframes aparecer{
+
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.anim{
+    opacity: 0;
+}
+
+.in-anim{
+    animation: aparecer 1.3s;
+    opacity: 1;
+}
+/*  */
+
 /* responsive */
 @media (max-width: 950px) {
     .bloque--fotos{
@@ -912,7 +979,10 @@ a.button--buy--invertido{
         padding: 1rem;
     }
 
-    
+    .bloque--datos {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 860px) {
@@ -998,6 +1068,16 @@ a.button--buy--invertido{
 
     .banner-text--big span {
         font-size: 3rem;
+    }
+
+    .bloque--tarjeta__contenido:first-child {
+        grid-column-start: span 2;
+        grid-row-start: span 1;
+    }
+
+    .bloque--datos {
+        flex-direction: row;
+        gap: 1rem;
     }
 }
 
@@ -1128,8 +1208,12 @@ a.button--buy--invertido{
         display: block;
     }
 
-    .lista-nav{
+    .ocultar{
         display: none;
+    }
+
+    .lista-nav {
+        gap: inherit;
     }
 
     nav{
@@ -1214,6 +1298,10 @@ a.button--buy--invertido{
         padding: 2rem;
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(auto-fit,1fr);
+    }
+
+    .bloque--tarjeta__contenido:first-child {
+        grid-column-start: span 1;
     }
     
     .bloque--tarjeta__contenido--completo{
