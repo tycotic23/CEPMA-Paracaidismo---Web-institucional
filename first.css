@@ -13,9 +13,6 @@ html{
 }
 
 :root{
-    --color-principal-green:#00974d;
-    --color-principal-blue:#27245f;
-    --color-bandera-celeste:#5bbfed;
     --color-bandera-amarillo:#f9b71b;
     --color-gris:#cfcfce;
     --color-light:white;
@@ -23,7 +20,6 @@ html{
     --color-dark:black;
     --color-gray:#303030;
     --color-bk-link-button:var(--color-bandera-amarillo);
-    --color-dark-filter:rgba(0, 0, 0, 0.705);
     --color-bk-link-button-hover:#ffe3a0;
     scroll-behavior: smooth;
 }
@@ -109,13 +105,10 @@ ul{
     list-style: none;
 }
 
-.header__title--big{
-    line-height: 1;
-}
+
 
 a.button--buy{
     display: inline-block;
-    /* margin-top: 1rem; */
     text-decoration: none;
 }
 

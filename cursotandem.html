@@ -10,9 +10,13 @@
     <noscript>
         <link rel="stylesheet" href="style.css">
     </noscript>
+    <link media="all" rel="preload" href="fondoscursos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="fondoscursos.css">
+    </noscript>
     <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
     <!-- precarga de img del heder-->
-    <link rel="preload" fetchpriority="high" as="image" href="assets/fotos/con-bandera.jpeg" type="image/jpg">
+    <!-- <link rel="preload" fetchpriority="high" as="image" href="assets/fotos/con-bandera.jpeg" type="image/jpg"> -->
     <!-- tipografia -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,11 +49,7 @@
             <h2 class="header__title--big header__title--big--large title--big margin-left">
                 Escuela de<br>paracaidismo
             </h2>
-            
-            <div class="botones-linea margin-top">
-                <a href="#salto-deportivo" class="button--buy button--buy--normal margin-left anim">QUIERO SER PARACAIDISTA</a>
-                <a href="#dual-tandem" class="button--buy button--buy--normal margin-left anim">QUIERO SER INSTRUCTOR</a>
-            </div>
+            <a href="#dual-tandem" class="button--buy button--buy--normal margin-left anim">QUIERO SER INSTRUCTOR</a>
             
         </div>
         
@@ -57,84 +57,6 @@
     <main>
         <div class="bloque bk-dark bloque--centrado banner--text">
             <p>¿Listo para saltar al siguiente nivel?</p>
-        </div>
-        <!-- Cursos -->
-        <div id="servicios" class="bloque--servicios bloque fondo bk-nubes fondo--paralax">
-            <div class="bloque--servicios__div fondo--curso-paracaidista anim">
-                <h3 class="bloque--servicios__h3">Curso de paracaidista deportivo</h3>
-                <a class="link-button self-center" href="#salto-deportivo">VER MÁS</a>
-            </div>
-            <div class="bloque--servicios__div fondo--bautismo anim">
-                <h3 class="bloque--servicios__h3">Curso de instructor tandem</h3>
-                <a class="link-button self-center" href="#dual-tandem">VER MÁS</a>
-            </div>
-            
-        </div>
-
-        <!-- descripcion curso de salto deportivo -->
-        <div class="bloque bk-yellow banner-text" id="salto-deportivo">
-            <h2 class="title--big--dark">CURSO DE<br>PARACAIDISMO DEPORTIVO</h2>
-            <h3 class="banner-text__h3">Modalidad DUAL TANDEM</h3>
-        </div>
-        <div class="bloque banner-text banner-text--big ">
-            <p>
-                <span>20</span> saltos en <span>3</span> niveles
-            </p>
-            <p class="torcido anim"><b>¡INCLUYE TEORÍA!</b></p>
-        </div>
-        <!-- etapas -->
-        <div  class="bloque banner-text">
-            <div class="bloque bloque--etapas">
-                <div class="bloque--etapas__div">
-                    <h3 class="bloque--etapas__div__h3 anim">NIVEL 1</h3>
-                    <p class="bloque--etapas__div__p anim">
-                        Realizarás 5 saltos con un instructor donde irás superando diferentes etapas, como adoptar
-una buena posición en caída libre, hasta que consigas relajarte y logres ganar confianza
-para abrir el paracaídas principal. Tambien irás practicando el procedimiento de aterrizaje
-                    </p>
-                </div>
-                <div class="bloque--etapas__div">
-                    <h3 class="bloque--etapas__div__h3 anim">NIVEL 2</h3>
-                    <p class="bloque--etapas__div__p anim">
-                        Aquí pasarás a los saltos asistidos, donde estarás solo con tu equipo y el instructor con el suyo propio.
-En la caída libre él te irá acompañando, verificando que hagas bien los procedimientos
-mediante señas y una radio. El objetivo de esta etapa es que puedas volar de una manera
-estable.
-Se realizan mínimo 3 saltos pero dependerá de las habilidades de cada persona si se
-requiere que realice algún salto más asistido por su instructor.
-                    </p>
-                </div>
-                <div class="bloque--etapas__div">
-                    <h3 class="bloque--etapas__div__h3 anim">NIVEL 3</h3>
-                    <p class="bloque--etapas__div__p anim">
-                        En la etapa final, realizarás saltos de consolidación, mediante el control de tu instructor
-quien te dará las herramientas para mejorar la caída libre, el vuelo y el aterrizaje.
-Todo esto hasta llegar al salto n° 20 , una vez aprobado, ya estarías en condiciones de
-rendir ante la ANAC (Administracion Nacional de Aviacion Civil) para obtener la licencia de
-paracaidista deportivo.
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-        <!-- descripcion y datos -->
-        <div class="bloque banner-text separado">
-            <p class="bloque--etapas__div__p"><b>Durante los niveles del curso vas a estar acompañado por nuestro equipo. Primero saltás con el instructor para acostumbrarte. Luego vas a ir soltándote más hasta completar los 20 saltos con los que ya vas a ser un paracaidista profesional. El curso incluye los materiales, el equipamiento y la teoría.</b></p>
-        </div>
-        <!-- requisitos -->
-        <div class="banner-text bk-light margin">
-            <h3 class="banner-text__h3">REQUISITOS</h3>
-            <p>A partir del segundo nivel necesitás presentar el examen psicofísico.</p>
-        </div>
-        <!-- cierre y llamado a la accion -->
-        <div class="bloque bk-yellow banner-text banner-text--center">
-            <h2 class="banner-text__h2 banner-text__h2--heavy anim">¿Listo para volverte paracaidista profesional?</h2>
-            <a href="https://wa.me/5491151464963" class="button--buy--normal button--buy--invertido margin-top anim">QUIERO INSCRIBIRME</a>
-        </div>
-
-
-        <div class="bloque fondo fondo--cursos-corte-1 bloque--llamativo">
-
         </div>
 
 
@@ -151,7 +73,7 @@ paracaidista deportivo.
             </p>
         </div>
         <!-- etapas -->
-        <div  class="bloque banner-text">
+        <div  class="bloque banner-text  fondo bk-nubes fondo--paralax">
             <div class="bloque bloque--etapas">
                 <div class="bloque--etapas__div">
                     <h3 class="bloque--etapas__div__h3 anim">FASE 1</h3>
@@ -262,7 +184,7 @@ paracaidista deportivo.
                 
             </div>
             <div class="bloque--pie-datos__columna">
-                <img loading="lazy" class="bloque--pie-datos__logo" src="assets/CEPMA LOGO - SIN FONDO_Mesa de trabajo 1 copia.png" alt="">
+                <img loading="lazy" class="bloque--pie-datos__logo" src="assets/logo-CEPMA.svg" alt="Escuela de paracaidismo malvinas argentinas">
             </div>
         </div>
         <!-- hecho por -->

@@ -1,0 +1,46 @@
+/* menu */
+
+
+/* esta clase se añade al menu cuando se lo abre desde el icono hamburguesa */
+.toggle-menu{
+    flex-direction: column;
+    display: flex ;
+    width: 100%;
+    align-items: center;
+    /* font-size: 2rem; */
+    padding: 0 1rem;
+    gap:2rem;
+    z-index: 10;
+    /* background-color: var(--color-white-filter); */
+    transition: all 0.2s ease-in-out;
+}
+
+.toggle-menu li{
+    background-color: white;
+    width: 100%;
+    padding: 0 1rem;
+    color:white !important;
+}
+
+.toggle-menu li:hover{
+    background-color: var(--color-gris);
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.toggle-menu li a{
+    display: block;
+    font-size: 1.5rem;
+    width: 100%;
+    color:black;
+    font-weight: 400;
+}
+
+.scroll-menu{
+    border-radius: 0;
+    width: 100%;
+    margin-top: 0;
+    /* padding: 1rem; */
+}
+
+/*  */

@@ -1,0 +1,24 @@
+.fondo--header{
+    background-image: url(assets/fotos/header.jpg);
+    background-position: center 30%;
+}
+
+.fondo--salto-deportivo{
+    background-image: url(assets/fotos/saltando.jpeg);
+
+}
+
+.fondo--vuelo-bautismo{
+    background-image: url(assets/fotos/avioneta2.jpg);
+    background-position-x: center;
+}
+
+.fondo--curso-paracaidista{
+    background-image: url(assets/fotos/servicio-salto-deportivo.jpg);
+    
+}
+
+.fondo--dospersonas{
+    background-image: url(assets/fotos/atados2.jpg);
+}
+
