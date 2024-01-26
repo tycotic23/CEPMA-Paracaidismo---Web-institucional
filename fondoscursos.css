@@ -13,20 +13,3 @@
     background-position-y:40%;
 }
 
-
-
-
-@media (max-width: 470px) {
-     /* fondos para celus */
-     .fondo--atardecer{
-         background-image: url(assets/fotos/atardecer-celu.jpg);
-     }
-     
-     .fondo--cursos-corte-1{
-         background-image: url(assets/fotos/cayendo-celu.jpg);
-     }
-     
-     .fondo--cursos-corte-2{
-         background-image: url(assets/fotos/con-bandera-celu.jpg);
-     }
- }
