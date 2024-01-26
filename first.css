@@ -81,6 +81,11 @@ h1 a{
     gap:1rem;
 }
 
+header{
+    /* estilo de fondo por si no carga la imagen principal */
+    background-color: var(--color-gray);
+}
+
 
 
 
