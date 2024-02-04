@@ -75,8 +75,10 @@ button{
 
 
 .fondo--footer{
-    background-image: url(assets/headerbk.jpg);
+    background-image: url(assets/fotos/footer-test-celeste.jpg);
     background-position-y: center;
+    /* background-position-x: left;
+    background-size: auto 100%; */
 }
 
 
@@ -224,7 +226,7 @@ nav{
 .title--big--dark{
     color:var(--color-dark);
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .banner-text{
@@ -739,7 +741,7 @@ a.button--buy--invertido{
         margin-left: 0;
     }
 
-    .title--big {
+    .title--big, .title--big--dark {
         font-size: 3rem;
     }
 
@@ -805,10 +807,6 @@ a.button--buy--invertido{
     .header__side__h3 {
         font-size: 1.3rem;
         padding: 0.8rem 1.5rem;
-    }
-
-    .title--big--dark {
-        font-size: 2rem;
     }
 
     .banner-text--big p {
@@ -893,7 +891,7 @@ a.button--buy--invertido{
         justify-content: flex-end;
     }
 
-    .title--big {
+    .title--big, .title--big--dark {
         text-align: center;
     }
 
@@ -902,9 +900,15 @@ a.button--buy--invertido{
         width: 100%;
         padding: 1rem;
         margin-top: 0;
+        justify-content: space-between;
     }
     .logo-nav{
-        display: none;
+        /* display: none; */
+        order:-1;
+    }
+
+    .lista-nav {
+        gap: 1rem;
     }
 
     .bloque--texto-especial p {
@@ -966,7 +970,6 @@ a.button--buy--invertido{
     }
 
     nav{
-        justify-content: flex-end;
         padding: 0.5rem 1rem;
     }
 
@@ -977,10 +980,6 @@ a.button--buy--invertido{
     .bloque--fotos{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-    }
-
-    .title--big--dark {
-        font-size: 1.5rem;
     }
 
     .banner-text--big span {
@@ -997,7 +996,7 @@ a.button--buy--invertido{
     font-size: 0.7rem;
    }
 
-   .title--big {
+   .title--big, .title--big--dark {
     font-size: 2rem;
     }
 
@@ -1135,7 +1134,7 @@ a.button--buy--invertido{
 }
 
 @media (max-width: 240px) {
-    .title--big {
+    .title--big, .title--big--dark {
         font-size: 1.5rem;
         }
 

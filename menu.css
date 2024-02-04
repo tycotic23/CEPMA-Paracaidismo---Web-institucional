@@ -2,38 +2,44 @@
 
 
 /* esta clase se añade al menu cuando se lo abre desde el icono hamburguesa */
-.toggle-menu{
+.toggle-menu .menu{
     flex-direction: column;
     display: flex ;
     width: 100%;
     align-items: center;
-    /* font-size: 2rem; */
-    padding: 0 1rem;
-    gap:2rem;
+    padding: 1rem;
+    gap:1rem;
     z-index: 10;
-    /* background-color: var(--color-white-filter); */
     transition: all 0.2s ease-in-out;
 }
 
-.toggle-menu li{
-    background-color: white;
+.toggle-menu .menu li{
+    border-bottom: solid 1px gray;
     width: 100%;
     padding: 0 1rem;
     color:white !important;
 }
 
-.toggle-menu li:hover{
-    background-color: var(--color-gris);
+.toggle-menu .menu li:hover{
+   background:linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 69%, rgba(255,255,255,0) 100%);
     width: 100%;
     padding: 0 1rem;
 }
 
-.toggle-menu li a{
+.toggle-menu .menu li a{
     display: block;
     font-size: 1.5rem;
     width: 100%;
     color:black;
     font-weight: 400;
+}
+
+.menu-icon{
+    transition: transform 0.3s ease-in-out .3s;
+}
+
+.toggle-menu .menu-icon{
+    transform: rotateX(180deg);
 }
 
 .scroll-menu{

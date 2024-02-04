@@ -9,7 +9,11 @@
 }
 
 .fondo--cursos-corte-2{
-    background-image: url(assets/fotos/con-bandera.jpeg);
+    background-image: url(assets/fotos/header-piloto-tandem-test.jpg);
     background-position-y:40%;
 }
 
+.fondo--cursos-escuela{
+    background-image: url(assets/fotos/header-curso-paracaidista.jpg);
+    background-position-y:40%;
+}

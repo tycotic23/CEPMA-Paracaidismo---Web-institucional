@@ -14,7 +14,7 @@
 }
 
 .fondo--curso-paracaidista{
-    background-image: url(assets/fotos/servicio-salto-deportivo.jpg);
+    background-image: url(assets/fotos/Curso-paracaidismo-deportivo.jpg);
     
 }
 
@@ -22,3 +22,6 @@
     background-image: url(assets/fotos/atados2.jpg);
 }
 
+.fondo--curso-tandem{
+    background-image: url(assets/fotos/curso-piloto-tandem.jpg);
+}
