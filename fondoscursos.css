@@ -9,12 +9,30 @@
 }
 
 .fondo--cursos-corte-2{
-    background-image: url(assets/fotos/header-piloto-tandem-test.jpg);
-    background-position-y:40%;
+   background-image: url(assets/fotos/tandem-header.jfif);
+    background-position-y:10%;
+    
 }
-
 .fondo--cursos-escuela{
     background-image: url(assets/fotos/header-curso-paracaidista.jpg);
     background-position-y:40%;
     background-position-x: 40%;
 }
+
+.fondo--cursos-corte-2 h2{
+   color: black;
+ }
+
+@media (max-width: 580px) {
+    .fondo--cursos-corte-2{
+         background-position-x:right ;
+     }
+}
+
+@media (max-width: 370px) {
+    .fondo--cursos-corte-2{
+         background-position-x:80% ;
+     }
+}
+
+
