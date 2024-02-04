@@ -554,7 +554,7 @@ a.button--buy--invertido{
 .bloque--llamado-accion{
     display:flex;
     align-items: center;
-    min-height: 80vh;
+    height: 80vh;
     gap:2rem;
     justify-content: flex-end;
     flex-direction: column;
@@ -565,6 +565,8 @@ a.button--buy--invertido{
 .fondo--footer{
     background-image: url(assets/fotos/footer-horizonte.jpg);
     background-position-y: 40%;
+    background-position-x: center;
+    
 }
 
 
@@ -937,6 +939,11 @@ a.button--buy--invertido{
         flex-direction: column;
         gap:0.5rem;
     }
+
+    p.text-celu-white{
+        color:white;
+        font-weight: 400;
+    }
 }
 
 @media (max-width: 540px) {
@@ -990,6 +997,11 @@ a.button--buy--invertido{
     .banner-text--big p {
         font-size: 1.5rem;
     }
+
+    .bloque--llamado-accion{
+        max-height: 400px;
+    }
+    
 }
 
 @media (max-width: 470px) {

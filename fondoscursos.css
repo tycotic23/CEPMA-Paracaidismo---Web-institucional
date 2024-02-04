@@ -16,4 +16,5 @@
 .fondo--cursos-escuela{
     background-image: url(assets/fotos/header-curso-paracaidista.jpg);
     background-position-y:40%;
+    background-position-x: 40%;
 }
