@@ -74,13 +74,6 @@ button{
 }
 
 
-.fondo--footer{
-    background-image: url(assets/fotos/footer-test-celeste.jpg);
-    background-position-y: center;
-    /* background-position-x: left;
-    background-size: auto 100%; */
-}
-
 
 
 .fondo--cuadro-caracteristica{
@@ -555,11 +548,25 @@ a.button--buy--invertido{
 }
 
 .bloque--llamativo{
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
     min-height: 50vh;
 }
+
+.bloque--llamado-accion{
+    display:flex;
+    align-items: center;
+    min-height: 80vh;
+    gap:2rem;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.fondo--footer{
+    background-image: url(assets/fotos/footer-horizonte.jpg);
+    background-position-y: 40%;
+}
+
 
 .bloque--pagos{
     color:black;
@@ -857,12 +864,6 @@ a.button--buy--invertido{
         font-size: 0.8rem;
     }
 
-    
-
-    .bloque--llamativo {
-        justify-content: center;
-        flex-direction: column;
-    }
 
 
     .fotos-grilla-4 {
