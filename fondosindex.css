@@ -14,7 +14,10 @@
 }
 
 .fondo--curso-paracaidista{
-    background-image: url(assets/fotos/Curso-paracaidismo-deportivo.jpg);
+    background-image: url(assets/fotos/curso-paracaida.jpg);
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: auto 150%;
     
 }
 

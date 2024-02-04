@@ -94,6 +94,7 @@ header{
 .fondo{
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: center;
 }
 
 .bk-dark{
