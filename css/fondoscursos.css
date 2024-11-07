@@ -1,20 +1,20 @@
 .fondo--atardecer{
-    background-image: url(assets/fotos/atardecer.jpeg);
+    background-image: url(../assets/fotos/atardecer.jpeg);
     background-position-y:70%;
 }
 
 .fondo--cursos-corte-1{
-    background-image: url(assets/fotos/cayendo.jpeg);
+    background-image: url(../assets/fotos/cayendo.jpeg);
     background-position-y:center ;
 }
 
 .fondo--cursos-corte-2{
-   background-image: url(assets/fotos/tandem-header.jfif);
+   background-image: url(../assets/fotos/tandem-header.jfif);
     background-position-y:10%;
     
 }
 .fondo--cursos-escuela{
-    background-image: url(assets/fotos/header-curso-paracaidista.jpg);
+    background-image: url(../assets/fotos/header-curso-paracaidista.jpg);
     background-position-y:40%;
     background-position-x: 40%;
 }

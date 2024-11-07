@@ -50,9 +50,6 @@ button{
     text-decoration: none;
 }
 
-
-
-
 .bloque--horizontal{
     display:flex;
     justify-content: space-between;
@@ -65,7 +62,7 @@ button{
 
 
 .fondo--bautismo{
-    background-image: url(assets/fotos/fondo-foter.jpg);
+    background-image: url(../assets/fotos/fondo-foter.jpg);
     background-position: center;
 }
 
@@ -79,6 +76,8 @@ button{
 
 .fondo--cuadro-caracteristica{
     background-color: var(--color-white-filter);
+    max-width: 650px;
+    margin: 250px auto;
 }
 
 .link-button{
@@ -121,9 +120,13 @@ a.link-button{
 
 
 .bk-nubes{
-    background-image: url(assets/nubes-crepusculares.jpg);
+    background-image: url(../assets/nubes-crepusculares.jpg);
 }
 
+.bk-salto-tandem-1{
+    background-image: url(../assets/fotos/saltodebautismo.jpg);
+    background-position: center;
+}
 
 .bk-yellow{
     background-color: var(--color-bandera-amarillo);
@@ -141,10 +144,7 @@ a.link-button{
 
 .bloque--tarjeta{
     padding: 6rem;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(auto-fill,1fr);
-    gap:1rem;
+    display: block;
 }
 
 .bloque--tarjeta__h3{
@@ -533,7 +533,7 @@ a.button--buy--invertido{
     content: '';
     width: 30px;
     height: 30px;
-    background-image: url(assets/ok-circle-filled.svg);
+    background-image: url(../assets/ok-circle-filled.svg);
     background-size: cover;
     background-position: center;
     margin-right: 0.5rem;
@@ -564,7 +564,7 @@ a.button--buy--invertido{
 }
 
 .fondo--footer{
-    background-image: url(assets/fotos/footer-horizonte.jpg);
+    background-image: url(../assets/fotos/footer-horizonte.jpg);
     background-position-y: 40%;
     background-position-x: center;
     
@@ -1155,4 +1155,32 @@ a.button--buy--invertido{
     .header__title--big {
         font-size: 2rem;
     }
+}
+
+.icono400{
+    width: 400px;
+    padding: 60px;
+}
+
+.wa-float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-wa-float{
+	margin-top:16px;
+}
+
+.center{
+    margin: 0 auto;
 }
